@@ -1,0 +1,154 @@
+body {
+  background-color: #fbfbf6;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 14px;
+}
+
+.todoInput {
+  border: 2px solid #474e5552;
+}
+
+.buttonCreate {
+  font-weight: 600;
+  width: 100px;
+  border: none;
+}
+
+input,
+button {
+  font-family: "Open Sans", serif;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todoContainer {
+  margin-top: 20vh;
+  width: 100%;
+  max-width: 500px;
+}
+
+.todoContainer .heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.todoContainer .heading h1 {
+  font-family: "Monomakh", serif;
+  font-weight: bold;
+  font-style: normal;
+  margin-top: 0;
+  color: #474e55;
+}
+
+.todoContainer .counters {
+  flex: 0 1 auto;
+  max-width: 90px;
+  width: 100%;
+  background-color: #e1dfc4;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10px;
+  text-align: center;
+  color: black;
+}
+
+.todoContainer .counters .pendingNumber {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.todoContainer .container {
+  background-color: white;
+
+  padding: 40px 40px;
+}
+
+.todoContainer .container > form {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+.todoContainer form .todoInput {
+  flex: 1;
+  min-height: 30px;
+  padding: 5px 20px;
+}
+
+.todosList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.todosList form{
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+}
+
+.todoItem:first-child,
+.todoItemFormUpdate:first-child{
+margin-top: 30px;
+}
+
+.todosList .todoItem {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 10px;
+}
+
+.todosList .todoItem span {
+  flex: 1;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.editBtn,
+.deleteBtn,
+.cancelBtn {
+  font-weight: 600;
+  min-width: 70px;
+  min-height: 44px;
+  border: none;
+}
+
+.editBtn {
+  background-color: #8eb0c9;
+}
+.deleteBtn {
+  background-color: #eb6161;
+}
+
+.cancelBtn{
+  background-color: gainsboro;
+}
+
+.titleUpdateInput {
+  border: 2px solid #474e5552;
+  flex: 1;
+  min-height: 30px;
+  padding: 5px 20px;
+}
