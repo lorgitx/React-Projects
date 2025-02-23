@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 14px;
+  background-color: #2e90f3;
+}
+
+input,
+button {
+  font-family: "Open Sans", serif;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+.weatherApp {
+  display: flex;
+  justify-content: center;
+}
+
+.appContainer {
+  margin-top: 25vh;
+  max-width: 500px;
+  width: 100%;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 7px;
+}
+
+.header {
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: capitalize;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.header form {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+  width: 100%;
+}
+
+form input {
+    flex: 1;
+    min-height: 30px;
+    padding: 5px 20px;
+    border: 1px solid darkgrey;
+    outline: none;
+    border-radius: 10px;
+}
+
+form button{
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: #2e90f3;
+    font-weight: bold;
+    color: white;
+    width: 80px;
+    font: 14px;
+    cursor: pointer;
+}
+
+.information {
+  border-radius: 15px;
+  background-color: white;
+  padding: 30px;
+}
+
+.locationInformation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.locationInformation h3 {
+  font-size: 26px;
+  margin: 0;
+}
+
+.locationInformation span {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.hourlyInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tomorrow {
+  margin-top: 20px;
+  background-color: grey;
+  padding: 30px;
+}
+
+.tomorrowInformation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.iconList {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.iconHour {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 8px;
+}
+
+.iconHour svg {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+.iconHour .formatedTime {
+  color: #888888;
+  font-weight: 600;
+}
+
+.iconHour .temperature {
+  color: #010101;
+  font-weight: bold;
+  font-size: 15px;
+}
